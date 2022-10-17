@@ -1,0 +1,3 @@
+HTTP headers let the client and the server pass additional information with an HTTP request or response.
+
+>Requests do not change its behavior at all based on which headers are specified.

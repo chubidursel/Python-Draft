@@ -1,0 +1,5 @@
+There are few steps to create telegram bot
+
+1. Get token from botFather
+
+2. Connect token to ur 

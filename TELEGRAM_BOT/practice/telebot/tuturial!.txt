@@ -1,0 +1,7 @@
+HOW TO CREATE TELEGRAM BOT!
+
+1. Get token from BotFather in telegram
+Set up name or pic etc.
+
+2. Import telebot or BETTER >> aiogram
+

@@ -1,0 +1,37 @@
+HOW TO CREATE TELEGRAM BOT (with aiogram)!
+
+1. Get token from BotFather in telegram
+Set up name or pic etc.
+
+2. Preparation
+
+	1. folder  
+	2. Create virtual envariment (aiogram will work better rather if its installed in python root)
+		cd /folder/ python -m venv venv    #create a folder of aiogram library
+		venv\Scripts\activate             # activate virtual envariment 
+		pip insall aiogramm			
+	3. Create .py file
+	4. ??create .bat file ?? 
+
+		
+	
+2. Import  aiogram
+
+**HOW DOES A T-bot RUN?: there r 2 modes >>
+	1. "LongPolling" = requests are made by a || client >> telegram server || . Keep file on ur comp. 
+	2. "Webhook" =  requests are made by a || telegram server >> bot (has url adress) ||. Keep file on server
+
+** options to send messages by bot
+@dp.message_handler()   <<< This handler will be called when user sends any texts
+async def echo_send(message: types.Message): << function for current handler
+
+    ## 1option
+    await message.answer("Salam! Whats up?")
+
+    ## 2nd option (old style)
+    chatID = message.chat.id
+    text = f"Salam{message.from_user.first_name}"
+    await bot.send_message(chat_id=chatID, text=text)
+
+    ***
+    text = message.text <<echo mode, bot replay the same mesasage
